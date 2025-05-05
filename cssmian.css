@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+}
+.contaner {
+    padding: 20px;
+    margin: 20px;
+}
+.contaner .header {
+    padding: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+.contaner .header .logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contaner .header .unet{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contaner .header .unet span{
+    font-size: 25px;
+    font-weight: bold;
+    color: #00ff00;
+}
+.contaner .row {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 20px;
+    background-color: white;
+}
+.contaner .row .game-Draw {
+    background-color: #eee;
+    height: 325px;
+    padding: 20px;
+flex: 1;
+border: 1px solid #333;
+}
+.contaner .row .game-Draw .the-Draw{
+    display: none;
+    position: relative;
+    width: 60px;
+    border-bottom: 4px solid #333;
+    height: 280px;
+    margin: auto;
+
+}
+.contaner .row .game-Draw .the-Draw .stand {
+    display: none;
+    width: 4px;
+    position: absolute;
+    height: 100%;
+    background-color: #333;
+    bottom: 0;
+    left: 50%;
+}
+.contaner .row .game-Draw .the-Draw .stand::before {
+    content: "";
+    top: 35px;
+    width: 70px;
+    position: absolute;
+    rotate: -41deg;
+    height: 4px;
+    background-color: #333;
+    right: -58px;
+}
+.contaner .row .game-Draw .the-Draw .hang {
+    display: none;
+}
+.contaner .row .game-Draw .the-Draw .hang::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 4px;
+    background-color: #333;
+    top: 13px;
+    left: 50%;
+}
+.contaner .row .game-Draw .the-Draw .hang::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    top: 15px;
+    height: 30px;
+    background-color: #333;
+    right: -100px;
+}
+.contaner .row .game-Draw .the-Draw .rope {
+    border-radius: 50%;
+    padding: 20px;
+    top: 17px;
+    right: -100px;display: none;
+    z-index: 9999;
+    border-radius: 50%;
+    padding: 30px;
+    top: 45px;
+    right: -131px;
+    position: absolute;
+    border: 4px dashed #333;
+    position: absolute;
+}
+.contaner .row .game-Draw .the-Draw .man .head{
+    position: absolute;
+    padding: 22px;
+    border-radius: 50%;
+    top: 52px;display: none;
+    right: -123px;
+    border: 4px solid #333;
+}
+.contaner .row .game-Draw .the-Draw .man .body {
+    width: 4px;
+    height: 90px;
+    background-color: #333;
+    position: absolute;display: none;
+    top: 104px;
+    right: -100px;
+}
+.contaner .row .game-Draw .the-Draw .man .hand {
+    display: none;
+}
+.contaner .row .game-Draw .the-Draw .man .hand::after{
+    content: "";
+    position: absolute;
+    background-color: #333;
+    width: 4px;
+    height: 60px;
+    top: 95px;
+    right: -117px;
+    rotate: 37deg
+}
+.contaner .row .game-Draw .the-Draw .man .hand::before{
+    content: "";
+    position: absolute;
+    background-color: #333;
+    width: 4px;
+    height: 60px;
+    top: 95px;
+    right: -82px;
+    rotate: -37deg
+    }
+    .contaner .row .game-Draw .the-Draw .man .legs {
+        display: none;
+    }
+    .contaner .row .game-Draw .the-Draw .man .legs::after{
+        content: "";
+        position: absolute;
+        background-color: #333;
+        width: 4px;
+        height: 60px;
+        top: 181px;
+        right: -118px;
+        rotate: -39deg;
+    }
+    .contaner .row .game-Draw .the-Draw .man .legs::before{
+        content: "";
+        position: absolute;
+        background-color: #333;
+        width: 4px;
+        height: 60px;
+        top: 181px;
+        right: -82px;
+        rotate: 39deg;
+        }
+        .contaner .row .letters .letter{
+            padding: 5px;
+            background-color: #00ff00;
+            color: white;
+            margin: 5px;
+            width: 55px;
+            display: inline-block;
+            height: 55px;
+            font-size:20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+            line-height: 2;
+        }
+        .contaner .row .letters {
+flex: 1;
+padding: 20px;
+text-align: center;
+        }
+        /* wrongs */
+        .game-Draw.wrong-1 .the-Draw {
+            display: block !important;
+        }
+        .game-Draw.wrong-2 .the-Draw .stand{
+            display: block !important;
+        }
+        .game-Draw.wrong-3 .the-Draw .hang {
+            display: block !important;
+        }
+        .game-Draw.wrong-4 .the-Draw .rope{
+            display: block !important;
+        }
+        .game-Draw.wrong-5 .the-Draw .man .head{
+            display: block !important;
+        }
+        .game-Draw.wrong-6 .the-Draw .man .body {
+            display: block !important;
+        }
+        .game-Draw.wrong-7 .the-Draw .man .hand{
+            display: block !important;
+        }
+        .game-Draw.wrong-8 .the-Draw .man .legs{
+            display: block !important;
+        }
+        /* classes */
+        .clicked {
+            background-color: black !important;
+            pointer-events: none;
+            cursor: none;
+            color: rgb(255, 0, 0) !important;
+        }
+        .space {
+            background-color: white !important;
+            pointer-events: none;
+            border: none !important;
+            position: relative;
+            color: #ff0000 !important;
+        }
+        .space::after {
+            content: "";
+            position: absolute;
+            width: 34px;
+            background-color: red;
+            height: 10px;
+            top: 20px;
+            left: 11px;
+        }
+
+        .contaner .div-letters {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contaner .div-letters span {
+            width: 55px;
+            margin-left: 10px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            background-color: #00ff00;
+            border-bottom: 3px solid #000000;
+            font-size: 25px;
+            font-weight: bold;
+            height: 55px;
+            line-height: 2;
+        }
+/* end the game */
+.endGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    text-align: center;
+}
+.endGame span{
+    color: #00ff00;
+    font-size: 50px;
+    font-weight: bold;
+}
+.endGame button {
+    background-color: #00ff00;
+    color: white;
+    border: none;
+    margin: 10px;
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
